@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>Temperature</title>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="5" > 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+</style>
+<body>
+<table>
+<tr><td>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>DASHBOARD</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rainfall</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sensors</a> 
+   <!--<a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Important notice</a> -->
+  </div>
+</nav>
+</td>
+<td>
+ <img src="http://stvlandscape.com/wp-content/uploads/2015/03/Popular-Landscaping-Shrubs.jpg "height=800 width=800></td>
+<td bgcolor="green"><div id='sensor1'>
+<h3>Temperature={{sensor1}}</h3></div>
+<p ><font color="white">
+<h1>
+About our project</h1>
+      <marquee direction = "up">we are reading the temerature data using rasperry pi and sending it to django server . we are displaying it on this html page</marquee></font>
+</p>
+</td>
+</tr>
+</body>
+</html>
+
+
